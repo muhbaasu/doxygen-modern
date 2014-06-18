@@ -1,0 +1,106 @@
+/* http://www.colourlovers.com/palette/2787323/Flat_UI_Design */
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+.tabs, .tabs2, .tabs3, .tablist li, .tablist li.current a, .tablist a,
+.ui-resizable-e, div.header, #nav-tree .selected, #nav-tree, .memproto,
+dl.reflist dt, .memdoc, dl.reflist dd {
+	background-image:none !important;
+}
+
+.tablist li.current a, .tablist a, .tablist a:hover, #nav-tree .selected  {
+	color: #283A5D;
+	text-shadow: none;
+}
+
+.tablist a:hover {
+	color: #BB4D3E;
+}
+
+.tablist li.current a {
+	color: white;
+	background-color: #BB4D3E;
+}
+
+.ui-resizable-e {
+	background-color: #414040;
+	width: 1px;
+}
+
+#titlearea {
+	border-bottom: none;
+	background-color: white;
+	color: #A2A2A2;
+	display: none;
+}
+
+div.header {
+	color: #414040;
+	border-bottom: 5px solid #42729B;
+}
+
+#nav-tree {
+	background-color: #292929;
+}
+
+a {
+	color: #BB4D3E;
+}
+
+#side-nav {
+	top: 36px; !important;
+}
+
+div.navpath {
+	display: none;
+}
+
+.tablist {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.memproto, dl.reflist dt {
+	border: none;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	text-shadow: none;
+	background-color: #2980b9;
+	color: white;
+}
+
+.memdoc, dl.reflist dd {
+	border: none;
+	text-shadow: none;
+}
+
+.paramname {
+	color: #414040;
+}
+
+.directory table {
+	border-collapse: initial;
+}
+
+.directory tr.even {
+	background-color: #ecf0f1;
+}
+
+.directory tr {
+	padding: 2px 0;
+}
+
+.directory td.entry {
+	padding-bottom: 3px;
+}
+
+.contents a:visited {
+	color: #42729B;
+}

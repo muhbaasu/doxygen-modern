@@ -1,4 +1,23 @@
 /* http://www.colourlovers.com/palette/2787323/Flat_UI_Design */
+@font-face {
+    font-family: "Inconsolata";
+    src: url("inconsolata.woff") format('woff');
+}
+
+@font-face {
+    font-family: "SourceCodePro";
+    src: url("SourceCodePro-Regular-webfont.woff") format('woff');
+}
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url("Roboto-Light-webfont.woff") format('woff');
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("Roboto-Regular-webfont.woff") format('woff');
+}
 
 html {
 	height: 100%;
@@ -10,8 +29,9 @@ body {
 
 .tabs, .tabs2, .tabs3, .tablist li, .tablist li.current a, .tablist a, .tablist a:hover,
 .ui-resizable-e, div.header, #nav-tree .selected, #nav-tree, .memproto,
-dl.reflist dt, .memdoc, dl.reflist dd {
+dl.reflist dt, .memdoc, dl.reflist dd, #MSearchField, #MSearchBox .left, #MSearchBox .right {
 	background-image:none;
+	font-family: RobotoLight;
 }
 
 .tablist li.current a, .tablist a, .tablist a:hover, #nav-tree .selected  {
@@ -20,12 +40,22 @@ dl.reflist dt, .memdoc, dl.reflist dd {
 }
 
 .tablist a:hover {
-	color: #BB4D3E;
+	color: white;
+	background-color: #9A9B9A;
 }
 
 .tablist li.current a {
 	color: white;
-	background-color: #BB4D3E;
+	background-color: #9A9B9A;
+}
+
+.tabs, .tabs2, .tabs3 {
+	font-size: 15px;
+	font-family: Inconsolata;
+}
+
+.tabs2 {
+	font-size: 12px;
 }
 
 .ui-resizable-e {
@@ -42,7 +72,32 @@ dl.reflist dt, .memdoc, dl.reflist dd {
 
 div.header {
 	color: #414040;
-	border-bottom: 5px solid #42729B;
+	border-top: 2px solid #848079;
+	font-family: RobotoRegular;
+	clear: both;
+}
+
+#navrow1 {
+	width: 40%;
+	float: left;
+}
+
+#navrow2 {
+	width: 40%;
+	float: right;
+	margin-right: 170px;
+}
+
+#navrow1 > ul {
+	justify-content: flex-start;
+}
+
+#navrow2 > ul {
+	justify-content: flex-end;
+}
+
+#navrow3 > ul {
+	clear: both;
 }
 
 #nav-tree {
@@ -50,7 +105,7 @@ div.header {
 }
 
 a {
-	color: #BB4D3E;
+	color: #353534;
 }
 
 #side-nav {
@@ -72,8 +127,8 @@ div.navpath {
 	border-top-right-radius: 0px;
 	border-top-left-radius: 0px;
 	text-shadow: none;
-	background-color: #2980b9;
-	color: white;
+	background-color: inherit;
+	color: #353534;
 }
 
 .memdoc, dl.reflist dd {
@@ -81,16 +136,22 @@ div.navpath {
 	text-shadow: none;
 }
 
+.memname {
+	font: inherit;
+	font-size: 1.2em;
+}
+
 .paramname {
-	color: #414040;
+	color: #353534;
 }
 
 .directory table {
 	border-collapse: initial;
+	font-family: RobotoLight;
 }
 
 .directory tr.even {
-	background-color: #ecf0f1;
+	background-color: #E6E7E9;
 }
 
 .directory tr {
@@ -101,6 +162,30 @@ div.navpath {
 	padding-bottom: 3px;
 }
 
+div.directory {
+	border-top: none;
+	border-bottom: none;
+}
+
 .contents a:visited {
-	color: #42729B;
+	color: #353534;
+}
+
+h2.groupheader {
+	border-bottom: 1px solid #9A9B9A;
+	color: #353534;
+}
+
+hr {
+	border-top: none;
+}
+
+div.qindex, div.navtab {
+	background-color: #9A9B9A;
+	border: none;
+	color: white;
+}
+
+div.line {
+	font-family: SourceCodePro;
 }

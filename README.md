@@ -15,8 +15,8 @@ HTML_EXTRA_FILES       = inconsolata.woff \
                          SourceCodePro-Regular-webfont.woff \
                          Roboto-Light-webfont.woff \
                          Roboto-Regular-webfont.woff \
-												 folder.png \
-												 code.png
+                         folder.png \
+                         code.png
 ```
 
 # Fonts (Credits)

@@ -198,7 +198,7 @@ div.ah {
 	color: white;
 }
 
-.iconfopen {
+.iconfopen, .iconfclosed {
 	background-image: url('folder.png');
 	background-size: contain;
 	background-position: center;

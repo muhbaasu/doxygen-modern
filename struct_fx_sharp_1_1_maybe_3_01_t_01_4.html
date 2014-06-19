@@ -161,8 +161,11 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Stored or given default val.</dd></dl>
-
-<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00129">129</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
+<div class="fragment"><div class="line">var name = TelephoneDirectory</div>
+<div class="line">               .LookUpName(<span class="stringliteral">&quot;+49394965006&quot;</span>) <span class="comment">// LookUpName returns Maybe[string]</span></div>
+<div class="line">               .<a class="code" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#af7fd14302ab630206283763b8e84a696">GetOrElse</a>(<span class="stringliteral">&quot;John Doe&quot;</span>);</div>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00136">136</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
 
 </div>
 </div>
@@ -205,8 +208,12 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result of the either nothing or just functions.</dd></dl>
-
-<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00221">221</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
+<div class="fragment"><div class="line">var name = TelephoneDirectory.LookUpName(<span class="stringliteral">&quot;+49394965006&quot;</span>) <span class="comment">// LookUpName returns Maybe[string]</span></div>
+<div class="line">               .Match(</div>
+<div class="line">                   just: name =&gt; name.ToUpper(),</div>
+<div class="line">                   nothing: () =&gt; <span class="stringliteral">&quot;John Doe&quot;</span>);</div>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00264">264</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
 
 </div>
 </div>
@@ -242,8 +249,13 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00234">234</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
+<div class="fragment"><div class="line">TelephoneDirectory</div>
+<div class="line">    .LookUpName(<span class="stringliteral">&quot;+49394965006&quot;</span>) <span class="comment">// LookUpName returns Maybe[string]</span></div>
+<div class="line">    .<a class="code" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ad478e18d3dd0549a9e8e48b1ac2b04e3">Match_</a>(</div>
+<div class="line">        just: name =&gt; view.DisplayName(name.ToUpper()),</div>
+<div class="line">        nothing: () =&gt; view.DisplayName(<span class="stringliteral">&quot;Unknown caller&quot;</span>));</div>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00286">286</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
 
 </div>
 </div>
@@ -269,8 +281,11 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>This instance.</dd></dl>
-
-<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00203">203</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
+<div class="fragment"><div class="line">TelephoneDirectory</div>
+<div class="line">    .LookUpName(<span class="stringliteral">&quot;+49394965006&quot;</span>) <span class="comment">// LookUpName returns Maybe[string]</span></div>
+<div class="line">    .<a class="code" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#a1d8e17a4bbe9c45b160485524684f19e">Otherwise_</a>(() =&gt; view.DisplayName(<span class="stringliteral">&quot;Unknown caller&quot;</span>));</div>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00238">238</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
 
 </div>
 </div>
@@ -302,8 +317,11 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The wrapped mapped val.</dd></dl>
-
-<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00141">141</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
+<div class="fragment"><div class="line">var name = TelephoneDirectory</div>
+<div class="line">               .LookUpName(<span class="stringliteral">&quot;+49394965006&quot;</span>) <span class="comment">// LookUpName returns Maybe[string]</span></div>
+<div class="line">               .Select(name =&gt; name.ToUpper());</div>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00155">155</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
 
 </div>
 </div>
@@ -329,8 +347,11 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>This.</dd></dl>
-
-<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00154">154</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
+<div class="fragment"><div class="line">TelephoneDirectory</div>
+<div class="line">    .LookUpName(<span class="stringliteral">&quot;+49394965006&quot;</span>) <span class="comment">// LookUpName returns Maybe[string]</span></div>
+<div class="line">    .<a class="code" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#a3375d18d62429b48f115c136cdf885e4">Select_</a>(name =&gt; view.DisplayName(name.ToUpper()));</div>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00175">175</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
 
 </div>
 </div>
@@ -374,8 +395,11 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result of the functions combined.</dd></dl>
-
-<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00190">190</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
+<div class="fragment"><div class="line">var caller = from name in TelephoneDirectory.LookUpName(<span class="stringliteral">&quot;+49394965006&quot;</span>) <span class="comment">// LookUpName returns Maybe[string]</span></div>
+<div class="line">             from photo in SocialNetwork.LookUpPhoto(name) <span class="comment">// LookUpPhoto returns Maybe[Image]</span></div>
+<div class="line">             select <span class="keyword">new</span> Caller(name, photo);</div>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00218">218</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
 
 </div>
 </div>
@@ -408,7 +432,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result of fn.</dd></dl>
 
-<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00173">173</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
+<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00194">194</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
 
 </div>
 </div>
@@ -428,7 +452,7 @@ Public Member Functions</h2></td></tr>
 <p></p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00252">252</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
+<p>Definition at line <a class="el" href="_maybe_8cs_source.html#l00304">304</a> of file <a class="el" href="_maybe_8cs_source.html">Maybe.cs</a>.</p>
 
 </div>
 </div>
@@ -438,7 +462,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 19 2014 13:53:00 for fx-sharp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 19 2014 20:48:58 for fx-sharp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

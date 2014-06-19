@@ -218,6 +218,39 @@ div.ah {
 	color: #2aa198;
 }
 
+div.line {
+	color: #839496;
+}
+
 span.lineno {
+	background-color: white;
 	border-right: 2px solid #2aa198;
+}
+
+div.fragment {
+	background-color: #002b36;
+}
+
+span.keyword {
+	color: #859900;
+}
+
+span.keywordflow {
+	color: #268bd2;
+}
+
+span.keywordtype {
+	color: #b58900;
+}
+
+span.comment {
+	color: #586e75;
+}
+
+span.stringliteral {
+	color: #2aa198;
+}
+
+a.code, a.code:visited, a.line, a.line:visited {
+	color: inherit; !important
 }

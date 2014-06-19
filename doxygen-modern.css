@@ -194,7 +194,7 @@ div.ah {
 }
 
 .icon {
-	background-color: #353534;
+	background-color: #2aa198;
 	color: white;
 }
 
@@ -208,4 +208,8 @@ div.ah {
 	background-image: url('code.png');
 	background-size: contain;
 	background-position: center;
+}
+
+#navrow1 > .tablist > .current > a {
+	background-color: #2aa198;
 }

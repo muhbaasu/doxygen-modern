@@ -16,3 +16,11 @@ HTML_EXTRA_FILES       = inconsolata.woff \
                          Roboto-Light-webfont.woff \
                          Roboto-Regular-webfont.woff
 ```
+
+# Fonts (Credits)
+
+- [Roboto Light and Regular](http://developer.android.com/design/style/typography.html)
+- [SourceCodePro Regular](https://github.com/adobe/source-code-pro)
+- [Inconsolata](http://levien.com/type/myfonts/inconsolata.html)
+
+

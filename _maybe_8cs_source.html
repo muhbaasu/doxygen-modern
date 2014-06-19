@@ -104,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> Maybe&lt;T&gt; ToMaybe&lt;T&gt;(<span class="keyword">this</span> T val)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="comment">// Value types are always valid unless explicitly set to Nothing.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">if</span> (typeof(T).IsValueType)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">if</span> (typeof (T).IsValueType)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keywordflow">return</span> Just(val);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            }</div>
@@ -210,46 +210,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        [Pure]</div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ab5d5e80ea3ca005af4a541de36674b99">  264</a></span>&#160;        <span class="keyword">public</span> TResult Match&lt;TResult&gt;(</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            [NotNull] Func&lt;TResult&gt; nothing,</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            [NotNull] Func&lt;T, TResult&gt; just)</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordflow">return</span> _hasValue ? just(_val) : nothing();</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        }</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        [Pure]</div>
-<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ad478e18d3dd0549a9e8e48b1ac2b04e3">  286</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html">Maybe&lt;T&gt;</a> <a class="code" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ad478e18d3dd0549a9e8e48b1ac2b04e3">Match_</a>([NotNull] Action nothing, [NotNull] Action&lt;T&gt; just)</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <span class="keywordflow">if</span> (_hasValue)</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                just(_val);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            }</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            {</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                nothing();</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            }</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        }</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        [Pure]</div>
-<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ab79609dba0913c778c65f7fad27c7765">  304</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ab79609dba0913c778c65f7fad27c7765">ToString</a>()</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        {</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <span class="keywordflow">return</span> _hasValue ? string.Format(<span class="stringliteral">&quot;Just {0}&quot;</span>, _val) : <span class="stringliteral">&quot;Nothing&quot;</span>;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        }</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    }</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;}</div>
-<div class="ttc" id="struct_fx_sharp_1_1_maybe_3_01_t_01_4_html_ad478e18d3dd0549a9e8e48b1ac2b04e3"><div class="ttname"><a href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ad478e18d3dd0549a9e8e48b1ac2b04e3">FxSharp.Maybe&lt; T &gt;.Match_</a></div><div class="ttdeci">Maybe&lt; T &gt; Match_([NotNull] Action nothing, [NotNull] Action&lt; T &gt; just)</div><div class="ttdoc">Map either the function just over the present val or call nothing. Ignore the result. </div><div class="ttdef"><b>Definition:</b> <a href="_maybe_8cs_source.html#l00286">Maybe.cs:286</a></div></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        [Pure]</div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ab5d5e80ea3ca005af4a541de36674b99">  265</a></span>&#160;        <span class="keyword">public</span> TResult Match&lt;TResult&gt;(</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            [NotNull] Func&lt;TResult&gt; nothing,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            [NotNull] Func&lt;T, TResult&gt; just)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <span class="keywordflow">return</span> _hasValue ? just(_val) : nothing();</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        [Pure]</div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ad478e18d3dd0549a9e8e48b1ac2b04e3">  287</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html">Maybe&lt;T&gt;</a> <a class="code" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ad478e18d3dd0549a9e8e48b1ac2b04e3">Match_</a>([NotNull] Action nothing, [NotNull] Action&lt;T&gt; just)</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            <span class="keywordflow">if</span> (_hasValue)</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                just(_val);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                nothing();</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        [Pure]</div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ab79609dba0913c778c65f7fad27c7765">  305</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code" href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ab79609dba0913c778c65f7fad27c7765">ToString</a>()</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keywordflow">return</span> _hasValue ? string.Format(<span class="stringliteral">&quot;Just {0}&quot;</span>, _val) : <span class="stringliteral">&quot;Nothing&quot;</span>;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        }</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    }</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;}</div>
+<div class="ttc" id="struct_fx_sharp_1_1_maybe_3_01_t_01_4_html_ad478e18d3dd0549a9e8e48b1ac2b04e3"><div class="ttname"><a href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ad478e18d3dd0549a9e8e48b1ac2b04e3">FxSharp.Maybe&lt; T &gt;.Match_</a></div><div class="ttdeci">Maybe&lt; T &gt; Match_([NotNull] Action nothing, [NotNull] Action&lt; T &gt; just)</div><div class="ttdoc">Map either the function just over the present val or call nothing. Ignore the result. </div><div class="ttdef"><b>Definition:</b> <a href="_maybe_8cs_source.html#l00287">Maybe.cs:287</a></div></div>
 <div class="ttc" id="struct_fx_sharp_1_1_maybe_3_01_t_01_4_html"><div class="ttname"><a href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html">FxSharp.Maybe&lt; T &gt;</a></div><div class="ttdoc">A type to describe a possibly absent val. </div><div class="ttdef"><b>Definition:</b> <a href="_maybe_8cs_source.html#l00100">Maybe.cs:100</a></div></div>
 <div class="ttc" id="struct_fx_sharp_1_1_maybe_3_01_t_01_4_html_af7fd14302ab630206283763b8e84a696"><div class="ttname"><a href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#af7fd14302ab630206283763b8e84a696">FxSharp.Maybe&lt; T &gt;.GetOrElse</a></div><div class="ttdeci">T GetOrElse(T other)</div><div class="ttdoc">Get the stored val or the given default instead. </div><div class="ttdef"><b>Definition:</b> <a href="_maybe_8cs_source.html#l00136">Maybe.cs:136</a></div></div>
 <div class="ttc" id="struct_fx_sharp_1_1_maybe_3_01_t_01_4_html_a1d8e17a4bbe9c45b160485524684f19e"><div class="ttname"><a href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#a1d8e17a4bbe9c45b160485524684f19e">FxSharp.Maybe&lt; T &gt;.Otherwise_</a></div><div class="ttdeci">Maybe&lt; T &gt; Otherwise_([NotNull] Action fn)</div><div class="ttdoc">Call the given function, if no val is present. </div><div class="ttdef"><b>Definition:</b> <a href="_maybe_8cs_source.html#l00238">Maybe.cs:238</a></div></div>
 <div class="ttc" id="struct_fx_sharp_1_1_maybe_3_01_t_01_4_html_a3375d18d62429b48f115c136cdf885e4"><div class="ttname"><a href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#a3375d18d62429b48f115c136cdf885e4">FxSharp.Maybe&lt; T &gt;.Select_</a></div><div class="ttdeci">Maybe&lt; T &gt; Select_([NotNull] Action&lt; T &gt; fn)</div><div class="ttdoc">Map the function fn over the wrapped val if present; discard the result. </div><div class="ttdef"><b>Definition:</b> <a href="_maybe_8cs_source.html#l00175">Maybe.cs:175</a></div></div>
-<div class="ttc" id="struct_fx_sharp_1_1_maybe_3_01_t_01_4_html_ab79609dba0913c778c65f7fad27c7765"><div class="ttname"><a href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ab79609dba0913c778c65f7fad27c7765">FxSharp.Maybe&lt; T &gt;.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>Definition:</b> <a href="_maybe_8cs_source.html#l00304">Maybe.cs:304</a></div></div>
+<div class="ttc" id="struct_fx_sharp_1_1_maybe_3_01_t_01_4_html_ab79609dba0913c778c65f7fad27c7765"><div class="ttname"><a href="struct_fx_sharp_1_1_maybe_3_01_t_01_4.html#ab79609dba0913c778c65f7fad27c7765">FxSharp.Maybe&lt; T &gt;.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>Definition:</b> <a href="_maybe_8cs_source.html#l00305">Maybe.cs:305</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 19 2014 20:48:57 for fx-sharp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 19 2014 21:11:28 for fx-sharp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

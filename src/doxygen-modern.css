@@ -27,6 +27,10 @@ body {
     min-height: 100%;
 }
 
+body, table, div, p, dl {
+	font: inherit;
+}
+
 .tabs,.tabs2,.tabs3,.tablist li,.tablist li.current a,.tablist a,.tablist a:hover,.ui-resizable-e,div.header,#nav-tree .selected,#nav-tree,.memproto,dl.reflist dt,.memdoc,dl.reflist dd,#MSearchField,#MSearchBox .left,#MSearchBox .right, div.ah {
     background-image: none;
     font-family: RobotoLight;
@@ -135,8 +139,8 @@ div.navpath {
 }
 
 .memname {
-    font: inherit;
-    font-size: 1.2em;
+    font-family: SourceCodePro;
+    font-size: 1em;
 }
 
 .paramname {

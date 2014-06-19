@@ -14,7 +14,9 @@ HTML_EXTRA_STYLESHEET  = doxygen-modern.css
 HTML_EXTRA_FILES       = inconsolata.woff \
                          SourceCodePro-Regular-webfont.woff \
                          Roboto-Light-webfont.woff \
-                         Roboto-Regular-webfont.woff
+                         Roboto-Regular-webfont.woff \
+												 folder.png \
+												 code.png
 ```
 
 # Fonts (Credits)
@@ -23,4 +25,7 @@ HTML_EXTRA_FILES       = inconsolata.woff \
 - [SourceCodePro Regular](https://github.com/adobe/source-code-pro)
 - [Inconsolata](http://levien.com/type/myfonts/inconsolata.html)
 
+# Icons (Credits)
 
+- [Icomoon](http://www.flaticon.com/authors/icomoon)
+- [simpleicon](http://www.flaticon.com/authors/simpleicon)

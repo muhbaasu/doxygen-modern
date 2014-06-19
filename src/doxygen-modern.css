@@ -27,7 +27,7 @@ body {
     min-height: 100%;
 }
 
-.tabs,.tabs2,.tabs3,.tablist li,.tablist li.current a,.tablist a,.tablist a:hover,.ui-resizable-e,div.header,#nav-tree .selected,#nav-tree,.memproto,dl.reflist dt,.memdoc,dl.reflist dd,#MSearchField,#MSearchBox .left,#MSearchBox .right {
+.tabs,.tabs2,.tabs3,.tablist li,.tablist li.current a,.tablist a,.tablist a:hover,.ui-resizable-e,div.header,#nav-tree .selected,#nav-tree,.memproto,dl.reflist dt,.memdoc,dl.reflist dd,#MSearchField,#MSearchBox .left,#MSearchBox .right, div.ah {
     background-image: none;
     font-family: RobotoLight;
 }
@@ -186,4 +186,26 @@ div.qindex,div.navtab {
 
 div.line {
     font-family: SourceCodePro;
+}
+
+div.ah {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.icon {
+	background-color: #353534;
+	color: white;
+}
+
+.iconfopen {
+	background-image: url('folder.png');
+	background-size: contain;
+	background-position: center;
+}
+
+.icondoc {
+	background-image: url('code.png');
+	background-size: contain;
+	background-position: center;
 }

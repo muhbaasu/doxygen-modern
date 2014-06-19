@@ -28,4 +28,4 @@ HTML_EXTRA_FILES       = inconsolata.woff \
 # Icons (Credits)
 
 - [Icomoon](http://www.flaticon.com/authors/icomoon)
-- [simpleicon](http://www.flaticon.com/authors/simpleicon)
+- [Freepik](http://www.flaticon.com/authors/freepik)

@@ -213,3 +213,12 @@ div.ah {
 #navrow1 > .tablist > .current > a {
 	background-color: #2aa198;
 }
+
+.directory .levels span {
+	color: #2aa198;
+}
+
+span.lineno {
+	border-right: 2px solid #2aa198;
+}
+

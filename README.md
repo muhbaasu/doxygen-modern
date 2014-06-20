@@ -19,13 +19,19 @@ HTML_EXTRA_FILES       = inconsolata.woff \
                          code.png
 ```
 
-# Fonts (Credits)
+# Credits
+
+## Fonts
 
 - [Roboto Light and Regular](http://developer.android.com/design/style/typography.html)
 - [SourceCodePro Regular](https://github.com/adobe/source-code-pro)
 - [Inconsolata](http://levien.com/type/myfonts/inconsolata.html)
 
-# Icons (Credits)
+## Icons
 
 - [Icomoon](http://www.flaticon.com/authors/icomoon)
 - [Freepik](http://www.flaticon.com/authors/freepik)
+
+## Color scheme
+
+- [Solarized](http://ethanschoonover.com/solarized)
